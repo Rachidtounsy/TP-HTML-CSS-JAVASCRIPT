@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+                              <meta charset="UTF-8">
+                              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                              <title>Rachid Tounsy</title>
+                              <link rel="stylesheet" href="style.css">
+                              <script src="javascript.js"> </script>
+                            
+<body>
+
+<div class="DivGlobale"   >
+ <form >
+ <label for="d1">nom :</label>   
+ <input  type="text" id="d1" name="nom" placeholder="Donner le nom">(*) <br>
+ <label for="d2">password :</label>    
+ <input  type="password" id="d2" name="Prenom" placeholder="Donner le password" required="required"><br>
+ <label> Afficher Div </label>
+  <input type="radio" name="grop1" id="OK"  onchange="AfficherDiv()" value="oui"> oui
+  <input  type="radio" name="grop1" id="Non"  onchange="AfficherDiv()" value="oui"> nom
+  <br>
+  <div id="Div">
+      <label> Choisir une ville </label><br>
+      <select >
+        <option disabled="disabled"> Selectionner Ville </option>
+        <option > Beni Mellal </option>
+        <option > casa </option>
+        <option >Merrakech </option>
+        <option > Tanger </option>
+      </select>
+</div>
+      <br>
+      <input type="submit" value="Se connecter" onclick="Verifier()" class="button"  > 
+      <input type="rest" value="annuler" class="button"  >
+         </form>
+             </div>     
+          
+</body>
+</html>
