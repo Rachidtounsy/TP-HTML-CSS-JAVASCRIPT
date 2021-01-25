@@ -1,0 +1,108 @@
+body{
+ background: url("img2.jpeg") no-repeat center;
+  height: 600px;
+}
+marquee
+{
+           width: 50%; 
+           height: 80px;
+           background-color: rgb(0, 255, 21);   
+           border-radius: 20px;
+         font-size: 15px;
+         position: relative;
+         top: 40px;
+         left:200px;
+
+}
+.form1
+{
+   padding:40px;
+   position: absolute;
+   top: 20%;
+    left:350px;
+    text-align: left;
+  
+}
+fieldset
+{
+  background-color:rgb(163, 163, 163,0.8);
+  padding:20px;   
+  border-radius: 20px;  
+  box-shadow: 100px rgb(25, 13, 245); 
+
+}
+label
+{
+  font-size: 22px;
+  text-align: left;
+  color:black
+}
+input
+{
+ border-radius: 8px;  
+ text-align: center;  
+ margin-bottom: 10px;
+ height: 20px;
+ 
+}
+#input1 
+{
+  margin-left: 50px;
+ 
+}
+#input3 
+{
+  margin-left: 45px;
+}
+#input4
+{
+  margin-left: 50px;
+}
+.input
+{ width: 150px;
+ height: 30px;
+ background-color: rgb(0, 255, 157);
+}
+span
+{
+  color:red;
+  border: 4px solid black;
+  border-radius: 15px;
+  font-size: 35px;
+  text-align: center;
+  padding: 10px 200px 10px 200px;
+  background-color: rgb(136, 250, 22);
+
+}
+.form2
+{
+
+ position: absolute;
+   top: 20%;
+     left:350px;
+     
+ }
+.class_select
+{
+  border-radius: 8px;  
+  text-align: center;  
+  margin-bottom: 10px;
+  height: 25px;
+  width: 200px;
+  background-color:yellow;
+}
+
+#divdemessage
+{
+  background-color:rgb(163, 163, 163,0.8);
+  font-size: 24px;
+  color:black;
+  border-radius: 10px;
+  padding: 10px;
+  position: absolute;
+  top: 80%;
+   left:350px;
+   display: none;
+   
+   
+}

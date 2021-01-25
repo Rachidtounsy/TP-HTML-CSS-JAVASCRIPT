@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>      formullaire  Rachid Tounsy  </title>
+        <link rel="stylesheet" href="Style.css"/>
+ 
+    <script src="javascriptValidation.js"></script>
+    </head>
+    <body>
+        <marquee hspace="100"   vspace="10" loop="100"     scrollamout="20"
+        behavior="scroll" direction="left">     
+      <h1> Remplissez la formulaire s'il vous plait   </h1>
+         </marquee>
+    
+        <form class="form1" action="#" method="get">
+      <fieldset>
+        <label >Nom:</label>
+        <input type="text" id="input1"  placeholder="Nom " required="required"  > <br>
+        <label >Residence:</label>
+        <input type="text" id="input2"   placeholder="Residence "> <br>
+        <label >Email:</label>  <input type="email" id="input3"  placeholder="..@gmail.com/ma" > <br>
+        <label >Age:</label>  <input type="text" id="input4"> <br>
+        <label >languge parlee:</label> <br>
+        <input type="checkbox"  value="FR" id="checkbox1" name="checkboxlanguge" >FR
+        <input type="checkbox"  value="AR" id="checkbox2" name="checkboxlanguge" >AR
+        <input type="checkbox"  value="ENG" id="checkbox3" name="checkboxlanguge">ENG 
+        <br>
+        <label >profession</label>
+       
+        
+            <select name=""id="list-option" class="class_select">
+            <option >selectionner une option: </option>
+            <option >Programmeur </option>
+            <option >Professur </option>
+            <option >Etudiant  </option>
+        </select>
+        <br>
+     <label >formullaire</label> 
+       <button class="input" onclick="valider()">Envoyer</button>         
+            <input type="reset" value="interrompre" class="input">
+
+    </fieldset>
+        
+       
+      
+    </form>
+     <br>
+     <div id="divdemessage">
+   
+    </div>
+             
+    </body>
+</html>
+
