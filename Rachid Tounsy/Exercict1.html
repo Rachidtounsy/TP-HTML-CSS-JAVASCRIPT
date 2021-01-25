@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Rachid Tounsy</title>
+   <link rel="stylesheet" href="styleex1.css"/>
+   
+   <script src="javascript.js" ></script>
+   
+    
+     
+</head>
+<body onload="alea()">
+ 
+       <h2> Vos données </h2>   
+       <h4> Cliquez sur le bouton "Aléatolre " pour tier virrer deux nombres entre 0 et 100</h4>
+       <span> A = </span>      <input type="text" id="inp1"  >    
+       <span> B = </span>      <input type="text" id="inp2" >  
+         <input type="button" value="Aléatolre" onclick="alea()" > <br>
+
+     
+       <h2> Votre solution:  </h2>   
+       <table>
+              
+                   <tr> <td class="ClassColor"> A+B</td>  <td><input class="tableInput" type="text" id="inptable1"  > </td></tr>
+                   <tr> <td class="ClassColor"> A-B</td> <td><input  class="tableInput" type="text" id="inptable2" > </td></tr>
+                   <tr> <td class="ClassColor">A*B </td> <td> <input  class="tableInput" type="text" id="inptable3" ></td></tr>
+                   <tr> <td class="ClassColor"> A/B </td> <td><input  class="tableInput" type="text"  id="inptable4"> </td></tr>
+                   <tr> <td colspan="2" class="button1"> <input type="button" value="Viréfier" onclick="Viréfier()"> </td> </tr>
+                              
+       </table>      
+       <h2> La correction :  </h2>  
+       A+B<input type="text" disabled="disabled" id="inp1C" class="classinp1" > 
+       A-B<input type="text" disabled="disabled"  id="inp2C"  class="classinp1"> 
+       A*B<input type="text" disabled="disabled" id="inp3C"  class="classinp1"> 
+       A/B<input type="text" disabled="disabled" id="inp4C"  class="classinp1"> 
+     <input type="button" value="OK" onclick="Solution()" > 
+</body>
+</html>

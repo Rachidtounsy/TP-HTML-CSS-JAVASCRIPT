@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 2 Rachid Tounsy</title>
+    
+    <link rel="stylesheet" href="style1.css"/>
+    <script>
+            
+function affichage()
+{
+    var S1=document.getElementById("S1");
+        var d1=document.getElementById("d1");
+        var i=S1.selectedIndex;
+ 
+   if (i==1)
+  {
+    d1.innerHTML=' <br><br><img src="images/Rdc.PNG" >';
+  }
+  else if (i==2)
+  {
+    d1.innerHTML='<br><br><img src="images/...png" alt=""> <br> Premier étage';
+  }
+  else if (i==3)
+  {
+    d1.innerHTML=' <br><br> <img src="images/Combles.PNG" alt="">';
+ 
+  }
+    else
+    {
+        
+        d1.innerHTML="ener selection option";
+
+    }
+    }                
+    </script>
+</head>
+<body>
+
+      <div class="div1">
+                                
+    <label class="class1"> Choisissez l'étage désiré</label><br> 
+        <select class="class2" id="S1" onchange="affichage()" > 
+               <option value="0" style="background-color: rgb(46, 141, 158); color:wheat"> Faites votre choix  </option>
+               <option  value="1"> Rez de chaussée </option> 
+               <option value="2">Premier étage </option> 
+               <option value="3"> Combles  </option>                        
+        </select>
+
+      </div>   
+      <div class="div2" id="d1">
+      <img src=""  > 
+      </div>                     
+</body>
+</html>

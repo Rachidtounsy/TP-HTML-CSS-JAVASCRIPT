@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script>
+        function Etudiant(nom,age,niveau,specialisation){
+            this.nom=nom;
+            this.age=age;
+            this.niveau=niveau;
+            this.specialisation=specialisation;
+
+            this.message=function(){
+                return "nom : "+this.nom+" age:"+this.age+ "niveau : "+this.niveau+" specialisation :"+this.specialisation+ "<hr>";
+            }
+            
+        }
+
+    </script>
+</head>
+<body>
+    <script> 
+      
+        var p=new Etudiant("Rachid",23,"2 Annee","TDI");
+        var p1=new Etudiant("Hasan",18,"1 Annee","TRI");
+        var p2=new Etudiant("Iman",20,"2 Annee","TRI");
+        var p3=new Etudiant("kamal",19,"1 Annee","TDI");
+        document.write(p.message());
+        document.write(p1.message());
+        document.write(p2.message());
+        document.write(p3.message());
+        
+    </script>
+    
+</body>
+</html>

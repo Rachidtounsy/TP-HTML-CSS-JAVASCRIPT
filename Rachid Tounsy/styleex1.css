@@ -1,0 +1,32 @@
+body
+{
+   background-color:#A7EDDF ;
+}
+table
+{
+  border: 6px groove black;
+}
+tr td
+{
+  width: 50px;
+ 
+}
+
+.ClassColor
+{
+  color:red;
+}
+.tableInput
+{
+   color:red;                          
+}
+.button1
+{
+  text-align: center;
+}
+
+.classinp1
+{
+  color: blue;
+  text-align: right;
+}
