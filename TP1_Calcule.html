@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>TP 1</title>
+    <style>
+     .div1
+    {
+  background-color:chartreuse ;
+     }
+       #x1
+       {
+            font-size: 20px; 
+            color:red;
+            border: 1px solid blue;                        
+       }
+       #x2
+       {
+            font-size: 20px; 
+            color:red;
+            border: 1px solid blue;                        
+       }
+       #d1{
+              background-color: aqua;  
+               width: 200px;
+               height: 40px ;
+               text-align: center;
+       }
+       #sp1
+       { font-size: 50px; }
+       .c2
+       {
+                         
+                              border: 1px solid darkslategrey;                      
+       }
+      .c3
+      {
+                              background-color: rgb(166, 255, 0);   
+      }
+
+    </style>
+     <script>
+         function somme(a,b)    
+       {
+              var s=a+b;
+               return s;                        
+          }                      
+     </script>
+</head>
+<body>
+                             
+  <div class="div1">
+   <label for="x1"> Nombre 1 </label>     <input type="text"     id="x1"   >   <br>
+   <label for="x2"> Nombre 2 </label>     <input type="text"     id="x2"   >   <br> <br>
+   <div> <input type="button" value="calcule" id="d1" onclick="validcalc() ">    </div>
+   <label style="font-size: 30;" > Resultat </label> <span id="sp1">0.00</span> 
+   <div id="d1" class="c2"> </div>    
+  </div>   
+  <script>
+                                function validcalc()
+                                {
+           var t1=document.getElementById("x1");
+           var t2=document.getElementById("x2");         
+           var d1=document.getElementById("d1");         
+           var sp1=document.getElementById("sp1");     
+             var n1=parseFloat(t1.value); 
+             var n2=parseFloat(t2.value);   
+             var y=somme(n1,n2) ;
+           
+             sp1.innerText=     y  ;
+
+       
+ if(t1.value=="" || t2.value=="")
+    { 
+                d1.innerHTML= " !! "  ;
+                return;        
+     }
+     if(isNaN(t1.value)==true || isNaN(t2.value)==true)
+     {
+                                   d1.innerHTML +" donner des nomber ";
+                                   d1.className+= "c3";
+     }
+   
+                                }
+          
+  </script>         
+</body>
+</html>
